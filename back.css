@@ -1,0 +1,15 @@
+#changestyle {
+    position: absolute;
+    top: 45px;
+    right: 125px;
+    z-index: 9999;
+  }
+  #particles-js {
+    position: absolute;
+
+    background-color: rgb(35,39,65);
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }

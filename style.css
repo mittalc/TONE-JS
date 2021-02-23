@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+}
+
+body h1{
+    margin-top: 0px;
+}
+header{
+    text-align: center;
+   
+
+}
+
+#piano{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    
+}
+ ul {
+	 list-style: none;
+	 display: flex;
+     padding-left: 0px;
+}
+ ul .key {
+	 position: relative;
+	 width: 4em;
+	 height: 16em;
+	 border: 1px solid black;
+	 border-right: none;
+	 background: #ffffff;
+	 border-radius: 5px;
+	 box-shadow: 0px 3px 5px #666;
+	 cursor: pointer;
+	 display: flex;
+	 justify-content: center;
+	 align-items: flex-end;
+	 padding-bottom: 10px;
+	 font-weight: bold;
+}
+ul .key:clicked {
+    background-color: rgba(0, 0, 0, 0.301);
+}
+ ul .key:last-child {
+	 border-right: 1px solid black;
+}
+ ul .black-key {
+	 position: absolute;
+	 top: -1px;
+	 left: 3em;
+	 width: 2.5em;
+	 height: 10em;
+	 background: rgb(0, 0, 0);
+	 border-radius: 5px;
+	 box-shadow: 0px 3px 5px #666;
+	 z-index: 999;
+	 display: flex;
+	 justify-content: center;
+	 align-items: flex-end;
+	 padding-bottom: 10px;
+	 color: rgba(255, 255, 255, 0.555);
+}
+ ul .active {
+	 box-shadow: 0px 1px 3px #666;
+
+
+
+}
+
+
+
+@media screen and (max-width:919px)  {
+    ul{
+        margin: 2px;
+    }
+    ul .key{
+        width: 3em;
+        height: 16em;
+    }
+
+    ul .black-key{
+        width: 1.5em;
+        height: 10em;  
+        left: 35px;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:919px)  {
+
+   ul{
+        margin: 2px;
+    }
+    ul .key{
+        width: 3em;
+        height: 16em;
+    }
+
+    ul .black-key{
+        width: 1.5em;
+        height: 10em;  
+        left: 35px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width:700px)  {
+
+    ul{
+         margin: 2px;
+     }
+     ul .key{
+         width: 2.5em;
+         height: 16em;
+     }
+ 
+     ul .black-key{
+         width: 1.3em;
+         height: 10em;  
+         left: 35px;
+     }
+ 
+ 
+ 
+ 
+ }
+
+ @media screen and (max-width:610px)  {
+
+    ul{
+         margin: 2px;
+     }
+     ul .key{
+         width: 2.3em;
+         height: 14em;
+     }
+ 
+     ul .black-key{
+         width: 1.3em;
+         height: 9em;  
+         left: 25px;
+     }
+ 
+ 
+ 
+ 
+ }
+
+
+ @media screen and (max-width:540px)  {
+
+    ul{
+         margin: 2px;
+     }
+     ul .key{
+         width: 2.1em;
+         height: 14em;
+     }
+ 
+     ul .black-key{
+         width: 1.2em;
+         height: 9em;  
+         left: 25px;
+     }
+ 
+ 
+ 
+ 
+ }
+@media screen and (min-width:750px) and (orientation:portrait) {
+    #backmeup {
+         display: block;
+    }
+}

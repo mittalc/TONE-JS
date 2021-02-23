@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="back.css">
+
+    <title>Document</title>
+</head>
+<body id="backmeup" >
+
+    <header>
+<h1>Let's Play!</h1>
+   
+  <!-- <section> 
+    <input type="radio" name="choice" value="syn"> SYN
+    <input type="radio" name="choice" value="am"> AM
+        <input type="radio" name="choice" value="fm"> FM
+        <input type="button" id="btn" value="Show Selected Value" onclick="play();""> -->
+   
+    <!-- </select> -->
+    <input type="button" class="btn"  onclick="play1();" value="SYN">
+    <input type="button" class="btn"  onclick="play2();" value="Am">
+    <input type="button" class="btn"  onclick="play3();" value="fm">
+
+
+</section>
+</header>
+    <ul id="piano">
+        <li data-note="C4" class="key">
+          <div data-note="C#4" class="black-key">C#</div>
+          C
+        </li>
+        <li data-note="D4" class="key">
+          <div data-note="D#4" class="black-key">D#</div>
+          D
+        </li>
+        <li data-note="E4" class="key">
+          E
+        </li>
+        <li data-note="F4" class="key">
+          <div data-note="F#4" class="black-key">F#</div>
+          F
+        </li>
+        <li data-note="G4" class="key">
+          <div data-note="G#4" class="black-key">G#</div>
+          G
+        </li>
+        <li data-note="A4" class="key">
+          <div data-note="A#4" class="black-key">A#</div>
+          A
+        </li>
+        <li data-note="B4" class="key">
+          B
+
+        </li>
+        <li data-note="C5" class="key">
+            <div data-note="C#5" class="black-key">C#</div>
+            C
+          </li>
+          <li data-note="D5" class="key">
+            <div data-note="D#5" class="black-key">D#</div>
+            D
+          </li>
+          <li data-note="E5" class="key">
+            E
+          </li>
+          <li data-note="F5" class="key">
+            <div data-note="F#5" class="black-key">F#</div>
+            F
+          </li>
+          <li data-note="G5" class="key">
+            <div data-note="G#5" class="black-key">G#</div>
+            G
+          </li>
+          <li data-note="A5" class="key">
+            <div data-note="A#5" class="black-key">A#</div>
+            A
+          </li>
+          <li data-note="B5" class="key">
+            B
+            
+          </li>        
+      </ul>
+    </div>
+    <script>
+        var portrait = window.innerWidth < window.innerHeight;
+        var PleaseRotateOptions = {
+            onlyMobile: true,
+            forcePortrait: !portrait
+        }
+      
+      </script>
+      <script src="pleaserotate.min.js"></script>
+      <script src="https://unpkg.com/tone@latest/build/Tone.js"></script>
+      
+
+    
+      <script src="style.js"></script>
+      
+
+      <script src="three.min.js"></script>     
+<script src="vanta.net.min.js"></script>
+<script>
+VANTA.NET({
+  el: "#backmeup",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: true,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x3f4aff,
+  backgroundColor: 0x0,
+  showDots: false
+})
+</script>
+
+</body>
+</html>
