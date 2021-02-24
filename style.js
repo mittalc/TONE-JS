@@ -2,6 +2,7 @@ var synth ;
 
 //create a synth and connect it to the main output (your speakers)
 function play1(){
+    document.querySelector("h3").innerHTML="You are currently playing on SYNTH tone";
     
   synth = new Tone.Synth().toDestination();
    console.log(synth);
@@ -108,7 +109,8 @@ function play1(){
 }
 
 function play2(){
-    
+    document.querySelector("h3").innerHTML="You are currently playing on FM-SYNTH tone";
+
     synth = new Tone.FMSynth().toDestination();
     console.log(synth);
     synth.oscillator.type = "fatsawtooth";
@@ -216,7 +218,8 @@ function play2(){
 
 
  function play3(){
-    
+    document.querySelector("h3").innerHTML="You are currently playing on MONO-SYNTH tone";
+  
   synth = new Tone.MonoSynth().toDestination();
    console.log(synth);
    synth.oscillator.type = "square8";
