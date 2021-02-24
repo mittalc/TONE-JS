@@ -11,8 +11,17 @@
 </head>
 <body id="backmeup" class="disable-select">
 
+          
+          
+          
+      
+        </div> 
+        </ul>
+      </nav> 
     <header>
-<h1>Let's Play!</h1>
+<h1 style="padding-top: 1em;">Synthesiser</h1>
+<h3><a href="hello.html" style="text-decoration: none; color: rgb(255, 255, 255);">Press on a tone to play | Click here to read the full guide.</a></h3>
+
    
   <!-- <section> 
     <input type="radio" name="choice" value="syn"> SYN
@@ -21,8 +30,10 @@
         <input type="button" id="btn" value="Show Selected Value" onclick="play();""> -->
    
     <!-- </select> -->
-    <input type="button" class="btn"  onclick="play1();" value="SYN">
-    <input type="button" class="btn"  onclick="play2();" value="Am">
+
+    <input type="button" class="btn"  onclick="play1();" value="SYNTH TONE">
+    <input type="button" class="btn"  onclick="play2();" value="FM-SYNTH TONE">
+    <input type="button" class="btn"  onclick="play3();" value="MONO-SYNTH TONE">
 
 
 </section>
@@ -93,6 +104,8 @@
       
       </script>
       <script src="pleaserotate.min.js"></script>
+      <script src="https://kit.fontawesome.com/f2dd3ee0cf.js" crossorigin="anonymous"></script>
+
       <script src="https://unpkg.com/tone@latest/build/Tone.js"></script>
       
 
@@ -102,6 +115,8 @@
 
       <script src="three.min.js"></script>     
 <script src="vanta.net.min.js"></script>
+<script src="responsive.js"></script>
+
 <script>
 VANTA.NET({
   el: "#backmeup",
