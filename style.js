@@ -1,53 +1,30 @@
+var synth ;
 
 //create a synth and connect it to the main output (your speakers)
 function play1(){
-   var synth = new Tone.Synth().toDestination();
+    
+  synth = new Tone.Synth().toDestination();
    console.log(synth);
+   synth.oscillator.type = "sine";
     play(synth);
 }
 
 function play2(){
-    var synth = new Tone.AMSynth().toDestination();
+    
+    synth = new Tone.FMSynth().toDestination();
     console.log(synth);
+    synth.oscillator.type = "fatsawtooth";
+
     play(synth);
  }
 
- function play3(){
-    var synth = new Tone.FMSynth().toDestination();
-    console.log(synth);
-    play(synth);
-    
- }
+
 function play(synth){
-    console.log("now"+synth)
 
-    
-     
-    // const btn = document.querySelector('#btn');
-    // // handle click button
-    // btn.onclick = function () {
-    //     const rbs = document.querySelectorAll('input[name="choice"]');
-    //     let selectedValue;
-    //     for (const rb of rbs) {
-    //         if (rb.checked) {
-    //             selectedValue = rb.value;
-    //             console.log(selectedValue)
-    //             break;
-    //         }
-    //     }
-    // };
+    console.log("now "+synth)
 
 
-    //     if(selectedValue="am"){
-    //       synth = new Tone.AMSynth().toDestination();
-    //    }else if(selectedValue="fm"){
-    //         synth = new Tone.FMSynth().toDestination();
-    //    }else {
-    //         synth = new Tone.Synth().toDestination();
-    //          }           
-    //    console.log(synth);  
-synth.oscillator.type = "sine";
-synth.toMaster();
+
 
 const piano = document.getElementById("piano");
 
