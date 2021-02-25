@@ -84,6 +84,15 @@ input:hover{
     color: beige;
     background-color: rgba(0, 0, 0, 0.452);
 }
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+	background: url('https://media.giphy.com/media/kfuDVfBbMhtuHN7BNl/giphy.gif') 50% 50% no-repeat rgb(0, 0, 0);
+}
  ul .black-key {
 	 position: absolute;
 	 top: -1px;
