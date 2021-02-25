@@ -80,6 +80,10 @@ ul .key:clicked {
  ul .key:last-child {
 	 border-right: 1px solid black;
 }
+input:hover{
+    color: beige;
+    background-color: rgba(0, 0, 0, 0.452);
+}
  ul .black-key {
 	 position: absolute;
 	 top: -1px;
